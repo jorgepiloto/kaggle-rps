@@ -1,0 +1,7 @@
+gym
+kaggle-environments
+pettingzoo
+pygame
+scipy
+termcolor
+vec-noise
