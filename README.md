@@ -17,8 +17,9 @@ def agent(observation: dict, configuration: dict) -> int:
     sign = ROCK
     return sign
 ```
-`observation` es un dict de la siguiente forma: `{'remainingOverageTime': 60, 'step': 0, 'reward': 0}`
-Donde `step` indica cuántas manos se han jugado y `reward` indica la puntuación hasta el momento (nr. de manos ganadas - nr. de manos perdidas)
+`observation` es un dict de la siguiente forma: `{'remainingOverageTime': 60, 'step': 0, 'reward': 0, 'lastOpponentAction': 0}`
+Donde `step` indica cuántas manos se han jugado y `reward` indica la puntuación hasta el momento (nr. de manos ganadas - nr. de manos perdidas).
+`lastOpponentAction` no existe en la primera jugada.
 
 `configuration` es constante: 
 ```
